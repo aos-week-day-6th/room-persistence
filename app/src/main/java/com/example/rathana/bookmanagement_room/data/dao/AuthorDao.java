@@ -8,6 +8,7 @@ import android.arch.persistence.room.Query;
 import android.arch.persistence.room.Update;
 
 import com.example.rathana.bookmanagement_room.entity.Author;
+import com.example.rathana.bookmanagement_room.entity.Book;
 
 import java.util.List;
 

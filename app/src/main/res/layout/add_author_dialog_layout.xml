@@ -12,6 +12,7 @@
         android:id="@+id/name"
         android:gravity="center"/>
     <RadioGroup
+        android:id="@+id/rdGroup"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

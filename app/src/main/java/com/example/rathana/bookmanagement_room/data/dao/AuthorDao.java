@@ -8,7 +8,7 @@ import android.arch.persistence.room.Query;
 import android.arch.persistence.room.Update;
 
 import com.example.rathana.bookmanagement_room.entity.Author;
-import com.example.rathana.bookmanagement_room.entity.Book;
+import com.example.rathana.bookmanagement_room.entity.AuthorBooks;
 
 import java.util.List;
 
@@ -24,4 +24,9 @@ public interface AuthorDao {
 
     @Query("SELECT * FROM author order by id asc")
     List<Author> getAuthors();
+
+    //get all author Books
+    @Query("select * from author order by id asc")
+    List<AuthorBooks> getAuthorBooks();
+
 }

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="16dp"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:id="@+id/thumb"
+            android:src="@drawable/images"/>
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textSize="11pt"
+            android:textColor="#000"
+            android:text="history of Dinoser"
+            android:layout_toRightOf="@+id/thumb"/>
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/authorName"
+            android:textSize="10pt"
+            android:text="Author : Lun sim"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/thumb"/>
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalPage"
+            android:textSize="10pt"
+            android:text="Page: 123"
+            android:layout_below="@+id/authorName"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateCreate"
+            android:textSize="10pt"
+            android:text="20/12/2018"
+            android:layout_below="@+id/totalPage"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:id="@+id/btbDelete"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dateCreate"/>
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

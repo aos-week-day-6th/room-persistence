@@ -12,7 +12,7 @@ import android.arch.persistence.room.PrimaryKey;
 )
 public class Book {
 
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public int id;
     public String title;
     public String desc;
@@ -24,4 +24,18 @@ public class Book {
 
     @ColumnInfo(name = "author_id")
     public int authorId;
+
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", desc='" + desc + '\'' +
+                ", dateCreated='" + dateCreated + '\'' +
+                ", page=" + page +
+                ", thumb='" + thumb + '\'' +
+                ", authorId=" + authorId +
+                '}';
+    }
 }
